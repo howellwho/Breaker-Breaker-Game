@@ -10,7 +10,7 @@ The app was built utilizing JavaScript and jQuery as well as Bootstrap elements.
 
 ## Installation
 
-No installation required if utilizing a modern web browser. Chrome and Firefox are recommended. Load the application via this URL: xxx.  
+No installation required if utilizing a modern web browser. Chrome and Firefox are recommended. Load the application via http://executor-julia-70844.bitballoon.com/ 
 
 ## Contributing
 
