@@ -2,7 +2,6 @@
 
 Breaker Breaker is a simple web application that mimics the classic arcade game Brick Breaker aka Arkanoid. The objective of the game is to destroy all of the bricks with the moving ball. Moving the paddle allows one to bounce the ball around the board. If the ball gets past the paddle bottom line you lose. One can restart the game by simply pressing Play Again.
 
-[img]http://i.imgur.com/cpocLzz.png[/img]
 
 ##Project Planning and Build
 
