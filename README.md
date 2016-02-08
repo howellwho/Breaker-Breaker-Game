@@ -5,7 +5,7 @@ Breaker Breaker is a simple web application that mimics the classic arcade game 
 
 ##Project Planning and Build
 
-This was planned via Trello [https://trello.com/b/q1iFtCRs/pizza-breaker]. I've also included the initial wire frames here: http://imgur.com/rNvQut0. Though I did not utilize the pizza theme for version 1.0, I plan on iterating for version 2.0.
+This was planned via Trello https://trello.com/b/q1iFtCRs/pizza-breaker. I've also included the initial wire frames here: http://imgur.com/rNvQut0. Though I did not utilize the pizza theme for version 1.0, I plan on iterating for version 2.0.
 
 The app was built utilizing JavaScript and jQuery as well as Bootstrap elements.
 
