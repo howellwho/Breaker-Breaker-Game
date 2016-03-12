@@ -22,7 +22,10 @@ var padding = 1;
 //to add later
 var score = 0;
 var airhorn;
-var pizza = "pizza_small.png"
+var pizza = "pizza_small.png";
+
+var lives = 3;
+
 //sets game board elements
 function init() {
   ctx = $('#canvas')[0].getContext("2d");
@@ -93,7 +96,7 @@ function drawbricks() {
       }
     }
   }
-};
+}
 
 //if no bricks left, winner
 // function brickDetection() {
@@ -105,7 +108,7 @@ function drawbricks() {
 var ballr = 10;
       var rowcolors = ["red", "orange", "yellow", "green", "blue"];
       var paddlecolor = "brown";
-      var ballcolor = "purple"
+      var ballcolor = "purple";
       var backcolor = "black";
       
       function draw() {
@@ -130,8 +133,9 @@ var ballr = 10;
         if (y < rows * rowheight && row >= 0 && col >= 0 && bricks[row][col] == 1) {
           dy = -dy;
           bricks[row][col] = 0;
-          score+=100
-          $("#score").html("Score: "+score);
+          score+=100;
+          $("#score").html("Score: "+score + " Lives: " +lives);
+
         }
         if (score == 2500) {
           $("h1").html("Winner!!!!!!!!!!!!!!!!");
@@ -149,10 +153,17 @@ var ballr = 10;
           }
         else if (y + dy + ballr > height) {
             // Game Over functionality
-            $("h1").html("Game Over");
-            $("#lose")[0].play();
-              document.location;
-              clearInterval(intervalId)
+            lives--;
+            $("#score").html("Score: "+score + " Lives: " +lives);
+  
+            if(lives === 0) {
+              $("h1").html("Game Over");
+              $("#lose")[0].play();
+                document.location;
+                clearInterval(intervalId);
+              
+            }
+         
     }
         }
         x += dx;
